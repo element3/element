@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+// adding Using Directive for static console, this reduces typing the keyword "Console" every time there is a write line
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //line16, output to display the words Hello World! to the user
+            WriteLine("Hello World!");
+            
+            //line 19, this holds the display message open until a key is pressed overwise the message is gone in a flash
+            Console.ReadKey();
+
+        }
+    }
+}
