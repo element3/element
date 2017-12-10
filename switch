@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+// Directive to save time typing console on Write Line
+
+namespace SwitchStatement
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // declare variable for user input
+            string userInput = null;
+
+            Write("Please enter a Capital letter grade, example A, B, C, D, F: ");
+            userInput = ReadLine();
+
+            // create a switch with different options according to the results
+
+            switch(userInput)
+            {
+                case "A":
+                    WriteLine("Highest score that can be obtained!"); // output for "A" from user input
+                    Console.ReadKey(); // hold the display open
+                    break; // break after each case to let the program know where the case stops
+
+                case "B":
+                    WriteLine("Second highest score, very promosing"); // output for "B" from user input
+                    Console.ReadKey(); // hold the display open
+                    break;
+
+                case "C":
+                    WriteLine("Third or average score"); // output for "C" from user input
+                    Console.ReadKey(); // hold the display open
+                    break;
+
+                case "D":
+                    WriteLine("Fourth, below average typically merits improvement"); // output for "D" from user input
+                    Console.ReadKey(); // hold the display open
+                    break;
+
+                case "F":
+                    WriteLine("The lowest score possible and strongly merits improvement"); // output for "F" from user input
+                    Console.ReadKey(); // hold the display open
+                    break;
+
+                    
+
+
+            }
+
+
+
+        }
+    }
+}
