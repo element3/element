@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+//adding directive static console to limit additional typing of the word console before write line
+
+namespace UserInput
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //declarations of variables, assiging data types: Name, Age, Current year
+
+            // string is any character letters, numbers, or special character via ! # $ ,
+            string userName = "";
+            // int via integer are whole numbers both positive and negative 
+            int userAge = 0;
+            int currentYear = 0;
+
+            // all variables are assigned a value in the event the user does not add input - the program won't crash over this potential error
+
+            Write("Please enter your name: "); // prompts the user for their name 
+            userName = Console.ReadLine(); // assigns user input as variable userName
+
+            Write("Please enter your Age: "); // prompts the user for their age
+            userAge = Convert.ToInt32(Console.ReadLine()); // by default, input from user are "strings" and numbers will need to be converted to "int"
+
+            Write("Please enter the current year: "); // prompts the user for the current year
+            currentYear = Convert.ToInt32(Console.ReadLine()); // as previous user inputs are "strings" convert to "int"
+
+            // display the information back to the user with additional mathematical equation to subtract age from current year showing their birth year
+            WriteLine("\nHello {0} ! You are {1} years old, that means you were born in {2}", userName, userAge, currentYear - userAge);
+
+            // the {} follows the variables added at the end of the WriteLine separated by commas: 0 is userName, 1 is userAge, 2 is an equation showing the birth year
+
+            Console.ReadKey(); // to hold display open for the user to view until any key is pressed
+        }
+    }
+}
