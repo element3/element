@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+//Directive to reduce typing Console for Write Line
+
+namespace Loops
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteLine("The for loop will count from 0 to 9 then stop awaiting any key");
+
+            for (int x = 0; 10 > x; x++) // for loop will iterate x value of 0 until the value of 9.
+            {
+               
+                WriteLine(x); // counts line by line from 0 to 9
+
+            }
+            Console.ReadKey();// holds the display open
+
+            // next loop example is going one step ahead using an array
+
+            // declare an array of numbers for the next loop structure "foreach" to utilize
+
+            int[] numberList = { 5, 10, 15, 20, 25 }; // each number in the array is an element the count starts at zero
+
+            // create foreach loop
+
+            WriteLine("\nThis foreach loop will show every element in the array line by line");
+            foreach (int i in numberList)
+            {
+
+                WriteLine(i); // write line will move the curser to the following line below after each entry
+
+                
+            }
+
+                     ReadKey(); // hold the display open
+
+            WriteLine("\nDisplay the same foreach loop but with all the numbers on the same line");
+            foreach (int i in numberList)// using the previous array
+            {
+                Write(i+" "); // using Write instead of WriteLine will show each number on the same line
+            }
+            ReadKey(); // hold the display open
+
+
+
+        }
+    }
+}
