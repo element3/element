@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+// using DIRECTIVE to save time when using Write Line, the word console will not be required
+
+namespace IfElse
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //declaring variable for user input
+            string userInput = null; // setup variable to accept user input
+
+            Write("Would you like to see a Star? Enter Y or N: "); // prompt user for a choice of Y for yes or N for no
+            userInput = Console.ReadLine(); // assign the variable with the user input
+
+            // create if else statement to react upon the entry
+
+            if (userInput == "Y") // test the if statement verse the userInput
+            {
+                // display a star 
+                WriteLine("    *    ");
+                WriteLine(" *  *  * ");
+                WriteLine("  *   *  ");
+
+                Console.ReadKey(); // Holds the display open until a key is pressed
+            }
+            else
+            {
+                WriteLine("You've decided not to view the Star."); // if any other entry except "Y" is entered this will be the result
+                Console.ReadKey(); // Holds the display open until a key is pressed
+            }
+
+
+
+
+        }
+    }
+}
