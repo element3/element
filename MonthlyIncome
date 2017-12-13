@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace MonthlySum
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //declarations
+            float monthlyInc = 0;
+            float mRent = 0;
+            float mUtils = 0;
+            float grocTot = 0;
+            float carPay = 0;
+            float carIns = 0;
+
+            WriteLine("Please enter Your Monthly Income: ");
+            monthlyInc = Convert.ToInt32(Console.ReadLine());
+
+            WriteLine("Please enter your total rent: ");
+            mRent = Convert.ToInt32(Console.ReadLine());
+
+            WriteLine("Please enter your monthly utility costs: ");
+            mUtils = Convert.ToInt32(Console.ReadLine());
+
+            WriteLine("Please enter your grocery total costs: ");
+            grocTot = Convert.ToInt32(Console.ReadLine());
+
+            WriteLine("Please enter your car payment total cost: ");
+            carPay = Convert.ToInt32(Console.ReadLine());
+
+            WriteLine("Please enter your insurance payment total: ");
+            carIns = Convert.ToInt32(Console.ReadLine());
+
+            float totalBills = mRent + mUtils + grocTot + carPay + carIns;
+            float remaining = monthlyInc - totalBills;
+            WriteLine("The amount of money you have left after monthly bills: "+remaining);
+
+            ReadKey();
+
+        
+
+
+
+
+        }
+    }
+}
