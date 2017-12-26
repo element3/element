@@ -1,0 +1,35 @@
+
+public class Eggs
+
+{
+
+   public static void main(String[] args)
+   
+   {
+   
+/* Author: Tim 
+Date: 3/7/2017
+*/
+
+// program designed to display order confirmation showing item details and total cost
+
+
+// Dozen Egg price is 3.25 each, single egg price is .45 cents each
+
+double dEggs = 3.25;
+double sEggs = .45;
+String totalEggs = "27";
+double totalCost = dEggs * 2 + sEggs * 3;
+// display order details showing cost each and cost of actual order 2 dozen eggs and 3 singles total 27 eggs followed by total cost
+
+   System.out.println("Order details:");
+   System.out.println("Dozen Eggs $3.25 each");
+   System.out.println("Qty: 2 Extended Cost: $" + dEggs *2);
+   System.out.println("Single Eggs $0.45 each");
+   System.out.println("Qty: 3 Extended Cost: $" + sEggs * 3);
+   System.out.println("Total eggs ordered each(s): " + totalEggs);
+   System.out.println("Total Cost: $" + totalCost);
+   
+   }
+   
+   }
