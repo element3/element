@@ -1,0 +1,31 @@
+import javax.swing.*;
+ 
+ 
+public class InchesToFeetInteractive 
+{ 
+   public static void main(String[] args) 
+   
+   { 
+   
+   /* Author: Tim  
+   Date: 3.7.17 
+   */ 
+   
+   /* Program is designed to prompt user for a whole number and convert 
+   that number into feet (12) and inches ( Remaining amount if any ) 
+   */ 
+   
+  
+ 
+   String a = JOptionPane.showInputDialog("Please enter a whole number");
+   
+   int numFeet = Integer.parseInt(a);
+   
+   JOptionPane.showMessageDialog(null, numFeet + " Converts into " + numFeet / 12 + " Feet and " + numFeet % 12 + " Inches");
+ 
+
+  
+   
+   } 
+ 
+} 
